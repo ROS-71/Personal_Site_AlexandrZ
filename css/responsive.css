@@ -1,0 +1,335 @@
+/*Разрешение менее < 992px */
+@media (max-width: 992px) {
+	.header .logo__block {
+		margin-top: 100px;
+	}
+
+	.header .header__logo {
+		width: 180px;
+		height: 180px;
+	}
+
+	.header .logo__text {
+		padding-bottom: 100px;
+	}
+
+	.resume__logo {
+		display: none;
+	}
+
+	.contacts__container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contacts__title {
+		text-align: center;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.writeToMe__title {
+		margin: 30px 0 -10px 0;
+	}
+
+	.contacts__social {
+		padding: 20px 0 0 0;
+	}
+
+	.social__title {
+		text-align: center;
+	}
+}
+
+/* Разрешение менее < 970px */
+@media (max-width: 970px) {
+	.header .logo__block {
+		margin-top: 70px;
+	}
+
+	.header .header__logo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.menu__item {
+		font-size: 30px;
+	}
+}
+
+/* Разрешение менее < 767px */
+@media (max-width: 767px) {
+	.header .logo__block {
+		margin-top: 0px;
+	}
+
+
+	.header .logo__name {
+		padding-top: 40px;
+	}
+
+	.header .header__logo {
+		width: 140px;
+		height: 140px;
+	}
+
+	.header .logo__text {
+		padding-bottom: 70px;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	/* Бургер меню */
+	.header__burger {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		opacity: 1.5;
+	}
+
+	.menu__icon {
+		z-index: 10;
+		display: block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		margin: 10px 0 5px 10px;
+
+		background-color: rgba(62, 141, 251, 0.545);
+		border-radius: 50%;
+	}
+
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 15%;
+		position: absolute;
+		height: 8%;
+		width: 70%;
+
+		transition: all 0.3s ease 0s;
+		background-color: #ffffff;
+	}
+
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+
+	.menu__icon::before {
+		top: 10px;
+	}
+
+	.menu__icon::after {
+		bottom: 10px;
+	}
+
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	/* Анимирование кнопки Меню Бургер при нажатии */
+	.menu__icon.active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+
+	.menu__icon.active::before {
+		top: 50%;
+		left: 17%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+
+	.menu__icon.active::after {
+		bottom: 50%;
+		left: 17%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+
+	/* *********************************************** */
+
+	.menu__body {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translate(-100%, 0px);
+		background-color: rgba(0, 0, 0, 0.95);
+		padding: 100px 30px 30px 30px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.menu__body.active {
+		transform: translate(0, 0);
+	}
+
+	.menu__link_burger {
+		padding: 0 0 120px 0;
+		color: #ffffff;
+		text-shadow: #000000 5px 5px 5px;
+	}
+}
+
+/* Разрешение менее < 650px */
+@media (max-width: 650px) {
+	.header {
+		background-size: 120%;
+	}
+
+	.header .logo__block {
+		margin-top: 0px;
+	}
+
+	.header /.logo__name {
+		padding-top: 10px;
+	}
+
+	.header .header__logo {
+		width: 120px;
+		height: 110px;
+	}
+
+	.resume__section .resume__container .resume__content .resume__header,
+	.resume__section .resume__container .resume__content .title,
+	.resume__section .resume__container .resume__content .resume__header .resume__about {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.resume__section .resume__container .resume__skill {
+		display: block;
+		text-align: center;
+	}
+
+	.resume__experience,
+	.resume__education {
+		padding-top: 50px;
+	}
+
+	.btn__resume-download {
+		margin: 0 auto;
+	}
+}
+
+/* Разрешение менее < 610px (для кнопок "Скачать рекзюме" */
+@media (max-width: 610px) {
+	.btn__resume-download {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.btn__link,
+	.custom {
+		margin: 10px 0 0 0;
+	}
+
+	.btn__resume-download a{
+		line-height: 50px;
+		padding: 10px;
+	}
+}
+
+/* Разрешение менее < 580px (для блока footer */
+@media (max-width: 580px) {
+	.footer {
+		padding: 20px 0 20px 35px;
+	}
+}
+
+/* Разрешение менее <520px (для блока "КОНТАКТЫ" */
+@media (max-width: 520px) {
+	.contacts__container {
+		display: block;
+		padding: 0 10px;
+		padding-bottom: 25px;
+	}
+
+	.contacts__social {
+		padding-top: 10px;
+	}
+
+	.contacts__title {
+		padding: 25px 0 0 0;
+	}
+
+	.contacts_info,
+	.contacts_wirteToMe {
+		width: 400px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.contacts__links {
+		display: block;
+	}
+
+	.form__email,
+	.form__skype,
+	.form__phone,
+	.form__telegramm {
+		width: 100%;
+	}
+
+	.social__title {
+		text-align: center;
+	}
+
+	.form__btnSubmit {
+		margin: 10px auto;
+	}
+
+	.form__btnSubmit:active {
+		position: relative;
+		top: 2px;
+		left: 2px;
+		margin: 10px auto;
+	}
+}
+
+/* Разрешение менее < 480px */
+@media (max-width: 480px) {
+	.header {
+		background-size: 130%;
+	}
+
+	.header .header__logo {
+		width: 100px;
+		height: 100px;
+	}
+
+	.header .logo__text {
+		padding-bottom: 20px;
+	}
+}
+
+/* Разрешение менее < 380px */
+@media (max-width: 380px) {
+	.header {
+		background-size: 170%;
+	}
+
+	.header .logo__text {
+		padding-bottom: 40px;
+	}
+}
+
+/* Разрешение менее < 320px */
+@media (max-width: 320px) {
+	.header {
+		background-size: 200%;
+	}
+
+	.header .logo__text {
+		padding-bottom: 30px;
+	}
+}

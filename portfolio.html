@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="css/style_portfolio.css?v=23.1302">
+	<link rel="stylesheet" href="css/responsive_portfolio.css?v=23.1302">
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(92218402, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/92218402" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<title>
+		ПОРТФОЛИО - Александра Забавина (Системный инженер/администратор. Верстальщик сайтов/front-end разработчик)
+	</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<nav class="header__menu">
+				<ul class="menu__list">
+					<li> <a href="index.html" class="menu__item"> Главная </a></li>
+					<li> <a href="resume.html" class="menu__item"> Резюме </a></li>
+					<li> <a href="index.html#contacts" class="menu__item"> Контакты </a></li>
+				</ul>
+			</nav>
+
+			<!-- Бургер меню -->
+			<div class="header__burger menu">
+				<div class="menu__icon">
+					<span></span>
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list_burger">
+						<li class="menu__link_burger"> <a href="index.html"> Главная </a> </li>
+						<li class="menu__link_burger"> <a href="resume.html"> Резюме </a> </li>
+						<li class="menu__link_burger"> <a href="index.html#contacts"> Контакты </a> </li>
+					</ul>
+				</nav>
+			</div>
+			<div class="logo__portfolioTitle pTitle"> ПОРТФОЛИО </div>
+			<div class="logo__block">
+				<div class="header__logo">
+					<img class="logo__image" src="img/my-logo.webp"
+						alt=" Забавин Александр Верстальщик сайтов Front-end разработчик">
+				</div>
+				<div class="logo__info">
+					<div class="logo__name"> Александр Забавин </div>
+					<div class="logo__text"> HTML верстальщик сайтов / Front-end разработчик</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Блок "ПОРТФОЛИО" -->
+		<div class="portfolio__section">
+			<div class="portfolio__container">
+				<div class="portfolio__content">
+					<div class="github__link">
+						<a href="https://github.com/ROS-71/">Мои пет-проекты на GitHub</a>
+					</div>
+
+
+					<div class="portfolio__tabs">
+						<nav class="tabs__items">
+							<button class="tabLinks" onclick="openTab(event, 'tab_exp')" id="defaultOpen"> <span><img
+										src="img/Exp_icon.png" alt=""></span> Учёбные проекты</button>
+
+							<button class="tabLinks" onclick="openTab(event, 'tab_ruble')"><span><img src="img/ruble_icon.png"
+										alt=""></span> Коммерческие проекты</button>
+
+							<button class="tabLinks" onclick="openTab(event, 'tab_JS')"><span><img src="img/JS_icon.png"
+										alt=""></span> Приложения на JavaScript</button>
+							<button class="tabLinks" onclick="openTab(event, 'tab_PHP')"><span><img src="img/PHP_icon.png"
+										alt=""></span> Приложения на PHP </a></button>
+						</nav>
+						<div class="tabs__body">
+
+							<!--  Вкладка с Учебными проектами -->
+							<div id="tab_exp" class="tabs__block">
+								<div class="exp__porjects">
+									<div class="exp__title title"> Учебные работы </div>
+									<div class="project__container">
+										<div class="project exp_first">
+											<div class="project__imageLink">
+												<a href="https://ros-71.github.io/WEB-nkoa-NSK_kollegy_advocats___not_adapted/"><img
+														src="img/slide-nka.webp"
+														alt="HTML Верстальщик сайтов, front-end разработчик, системный инженер, системный администратор"></a>
+											</div>
+											<div class="project__title">
+												<p>
+													Новомосковская коллегия адвокатов
+												</p>
+												<p>
+													(Первая работа, верстал на глаз по ссылке , не адаптирован)
+												</p>
+											</div>
+										</div>
+
+										<div class="project exp_second">
+											<div class="project__imageLink">
+												<a href="https://ros-71.github.io/WEB_Landing_SweetChest___not_adapted/">
+													<img src="img/slide-sweetchest.webp"
+														alt="HTML Верстальщик сайтов, front-end разработчик, системный инженер, системный администратор"></a>
+											</div>
+											<div class="project__title">
+												<p> Кондитерская "СЛАДКИЙ СУНДУК"
+												</p>
+												<p>
+													(Верстал по макету Figma, не адаптирован)
+												</p>
+											</div>
+										</div>
+
+										<div class="project exp_third">
+											<div class="project__imageLink">
+												<a href="https://ros-71.github.io/WEB_Landing_Fitness_club_Panteon___not_adapted/">
+													<img src="img/slide-panteon.webp"
+														alt="HTML Верстальщик сайтов, front-end разработчик, системный инженер, системный администратор"></a>
+											</div>
+											<div class="project__title">
+												<p>
+													Фитнесс-клуб "ПАНТЕОН"
+												</p>
+												<p>
+													(Верстал по макету Figma, не адаптирован)
+												</p>
+											</div>
+										</div>
+
+										<div class="project exp_fourth">
+											<div class="project__imageLink">
+												<a href="https://ros-71.github.io/WEB_TestTask_REQUEST__Adapted/">
+													<img src="img/slide-stolovaya-ru.webp"
+														alt="HTML Верстальщик сайтов, front-end разработчик, системный инженер, системный администратор"></a>
+											</div>
+											<div class="project__title">
+												<p>Главная страница сайта СТОЛОВАЯ.РУ</p>
+												<p>
+													(Верстал по макету PSD, адаптирован по макету, макет является тестовым заданием
+													студии Request)
+												</p>
+											</div>
+										</div>
+
+										<div class="project exp_fifth">
+											<div class="project__imageLink">
+												<a href="http://project6235926.tilda.ws/page32306441.html">
+													<img src="img/slide-tilda.webp"
+														alt="HTML Верстальщик сайтов, front-end разработчик, системный инженер, системный администратор"></a>
+											</div>
+											<div class="project__title">
+												<p> Лендинг САМОКАТЫ Яндекс.GO </p>
+												<p> (Верстал на TILDA, по визульному лендинг-примеру. Данная работа является
+													тестовым заданием от Яндекса) </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Вкладка с Коммерческими проектами -->
+							<div id="tab_ruble" class="tabs__block">
+								<div class="commercial__projects">
+									<div class="commercial__title title"> Коммерческие проекты </div>
+									<div class="project__container">
+
+										<div class="project com_first plug">
+											<div class="project__imageLink">
+												<a href="##"> Проект уже в работе! </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+										<div class="project com_second plug">
+											<div class="project__imageLink">
+												<a href="##"> Проект скоро будет добавлен! </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+										<div class="project com_third plug">
+											<div class="project__imageLink">
+												<a href="##"> Тут будет новый проект, после предыдущего! </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+										<div class="project com_fourth plug">
+											<div class="project__imageLink">
+												<a href="##"> Здесь будет самый лучший проект </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+										<div class="project com_fifth plug">
+											<div class="project__imageLink">
+												<a href="##"> Скоро будете лицезреть произведение исскуства </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+										<div class="project com_sixth plug">
+											<div class="project__imageLink">
+												<a href="##"> Настоящий Шедевр! </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Вкладка с Приложениями на JS -->
+							<div id="tab_JS" class="tabs__block">
+								<div class="JS__projects">
+									<div class="JS__title title"> Приложения на JavaScript </div>
+									<div class="project__container">
+
+										<!-- Dynamic Cards -->
+										<div class="project js_first">
+											<div class="project__imageLink">
+												<a href="#popup_js1">
+													<div id="outer">
+														<video class="video" src="img/video/Dynamic_Cards.webm" height="318"
+															preload="auto" no-controls autoplay loop playsinline muted>
+														</video>
+													</div>
+												</a>
+											</div>
+											<div class="project__title">
+												<p> Dynamic Cards - своего вида сладер, но с эффектом динамически
+													выезжающих карточек. </p>
+											</div>
+										</div>
+
+										<!-- Drag & Drop -->
+										<div class="project js_second">
+											<div class="project__imageLink">
+												<a href="#popup_js2">
+													<div id="outer">
+														<video class="video" src="img/video/Drag&Drop.webm" preload="auto" no-controls
+															autoplay loop playsinline muted>
+														</video>
+													</div>
+												</a>
+											</div>
+											<div class="project__title">
+												<p> Drag & Drop - позволяет перетаскивать объект с одного места на другой.
+												</p>
+											</div>
+										</div>
+
+										<!-- Custom Slider -->
+										<div class="project js_third">
+											<div class="project__imageLink">
+												<a href="#popup_js3">
+													<div id="outer">
+														<video class="video" src="img/video/Custom_Slider.webm" preload="auto"
+															no-controls autoplay loop playsinline muted>
+														</video>
+													</div>
+												</a>
+											</div>
+											<div class="project__title">
+												<p> Custom Slider - кастомный сладер, с "инверторным" пролистыванием контента. </p>
+											</div>
+										</div>
+
+										<!-- Color Snake -->
+										<div class="project js_fourth">
+											<div class="project__imageLink">
+												<a href="#popup_js4">
+													<div id="outer">
+														<video class="video" src="img/video/Color_Snake.webm" preload="auto"
+															no-controls autoplay loop playsinline muted>
+														</video>
+													</div>
+												</a>
+											</div>
+											<div class="project__title">
+												<p> Color Snake - бегущий за мышью цветной шлейф, при плавном перемещении мыши в
+													виде волны по полю из маркеров получается змейка. </p>
+											</div>
+										</div>
+
+										<!-- Game: Aim Training-->
+										<div class="project js_fifth">
+											<div class="project__imageLink">
+												<a href="#popup_js5">
+													<div id="outer">
+														<video class="video" src="img/video/Game_Aim_Training.webm" preload="auto"
+															no-controls autoplay loop playsinline muted>
+														</video>
+													</div>
+												</a>
+											</div>
+											<div class="project__title">
+												<p> Игра: "Aim Trainig". Смысл заключается в наибольшем "нащёлкивании" мышью по
+													цветным кружкам появляющимся в разных позициях игрового поля за выбранное время.
+												</p>
+											</div>
+										</div>
+
+										<div class="project js_sixth">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-js.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Вкладка с приложениями на PHP -->
+							<div id="tab_PHP" class="tabs__block">
+								<div class="PHP__projects">
+									<div class="PHP__title title"> Приложения на PHP </div>
+									<div class="project__container">
+										<div class="project php_first">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+										<div class="project php_second">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+										<div class="project php_third">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+										<div class="project php_fourth">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+										<div class="project php_fifth">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+										<div class="project php_sixth">
+											<div class="project__imageLink">
+												<a href="##"> <img src="img/plug-php.webp" alt=""> </a>
+											</div>
+											<div class="project__title">
+												<p> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Модальные окна с проектами -->
+	<!-- Dynamic_Cards -->
+	<div id="popup_js1" class="popup_js">
+		<a class="popup_js__area" href="##"></a>
+		<div class="popup_js__body">
+			<a class="popup__close" href="##"> x </a>
+			<div class="popup__title title"> Dynamic Cards </div>
+			<div class="popup_js1__container">
+				<div class="slide ferrari">
+					<h3> Ferrari </h3>
+				</div>
+				<div class="slide lamborghini">
+					<h3> Lamborghini </h3>
+				</div>
+				<div class="slide camaro">
+					<h3> Camaro </h3>
+				</div>
+				<div class="slide astonMartin">
+					<h3> Aston Martin </h3>
+				</div>
+				<div class="slide tesla">
+					<h3> Tesla </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Drag_&_Drop -->
+	<div id="popup_js2" class="popup_js">
+		<a class="popup_js__area" href="##"></a>
+		<div class="popup_js__body">
+			<a class="popup__close" href="##"> x </a>
+			<div class="popup__title title"> Drag & Drop <br> <span>( Работает только на DeskTop версии )</span></div>
+			<div class="popup_js2__container">
+				<div class="row">
+					<div class="col-header js2__start">Начать</div>
+					<div class="col-header js2__progress">В процессе</div>
+					<div class="col-header js2__done">Готовы</div>
+				</div>
+				<div class="row">
+					<div class="placeholder">
+						<!-- Обязательное добавление атрибута draggable со значением true - это еужно для активации преетаскивания данного блока на странице!!!-->
+						<div class="item" draggable="true">Перетащи меня под другой маркер</div>
+					</div>
+					<div class="placeholder"></div>
+					<div class="placeholder"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom_Slider -->
+	<div id="popup_js3" class="popup_js">
+		<a class="popup_js__area" href="##"></a>
+		<div class="popup_js__body">
+			<a class="popup__close" href="##"> x </a>
+			<div class="popup__title title"> Custom Slider <br> <span>( ещё не адаптирован под мобильные устройства
+					)</span></div>
+			<div class="popup_js3__container">
+				<div class="sidebar">
+					<div style="background: linear-gradient(229.99deg, #A1A8AE 26%, #928579 95%);">
+						<h1>Work place</h1>
+						<p>to best fotos</p>
+					</div>
+					<div style="background: linear-gradient(215.32deg, #928579 -1%, #574636 124%);">
+						<h1>photographer's kit</h1>
+						<p>for proffessional</p>
+					</div>
+					<div style="background: linear-gradient(221.87deg, #f8f8f8 1%, #a7a7a7 128%);">
+						<h1>Foto study</h1>
+						<p>modern study</p>
+					</div>
+					<div style="background: linear-gradient(220.16deg, #18d2f3 28%, #0293f3 96%);">
+						<h1>Creative fotos</h1>
+						<p>... winter</p>
+					</div>
+					<div style="background: linear-gradient(220.16deg, #f3e3b9 -8%, #313131 90%);">
+						<h1>Foto nature</h1>
+						<p>... to evening </p>
+					</div>
+					<div style="background: linear-gradient(-290deg, #000000 -2%, #646464 183%);">
+						<h1>SONY Camera</h1>
+						<p>Canon lens</p>
+					</div>
+				</div>
+				<div class="main-slide">
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80');">
+					</div>
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');">
+					</div>
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');">
+					</div>
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');">
+					</div>
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1431068799455-80bae0caf685?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');">
+					</div>
+					<div
+						style="background-image: url('https://images.unsplash.com/photo-1621600411688-4be93cd68504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80');">
+					</div>
+				</div>
+
+				<!-- Кнопки навигации -->
+				<div class="controls">
+					<button class="down-button">
+						<i class="fas fa-arrow-down"></i>
+					</button>
+					<button class="up-button">
+						<i class="fas fa-arrow-up"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Color_Snake -->
+	<div id="popup_js4" class="popup_js">
+		<a class="popup_js__area" href="##"></a>
+		<div class="popup_js__body">
+			<a class="popup__close" href="##"> x </a>
+			<div class="popup__title title">
+				Color Snake <br>
+				<span>( Работает только на DeskTop версии )</span>
+			</div>
+			<div class="popup_js4__container" id="boardCS">
+			</div>
+		</div>
+	</div>
+
+	<!-- Game: Aim Trainer -->
+	<div id="popup_js5" class="popup_js">
+		<a class="popup_js__area" href="##"></a>
+		<div class="popup_js5__body">
+			<a class="popup__close" href="##"> x </a>
+			<div class="popup__title title">
+				Game: "Aim Training" <br>
+				<span>( Работает только на DeskTop версии )</span>
+			</div>
+			<div class="popup_js5__container">
+				<div class="screen">
+					<h1>Aim Training</h1>
+					<a href="#" class="start" id="start">Начать игру</a>
+				</div>
+				<div class="screen">
+					<h1>Выберите время</h1>
+					<ul class="time-list" id="time-list">
+						<li>
+							<button class="time-btn" data-time="10">
+								10 сек
+							</button>
+						</li>
+						<li>
+							<button class="time-btn" data-time="20">
+								20 сек
+							</button>
+						</li>
+						<li>
+							<button class="time-btn" data-time="30">
+								30 сек
+							</button>
+						</li>
+						<li>
+							<button class="time-btn" data-time="60">
+								60 сек
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="screen">
+					<div class="title"> Щёлкай мышью по кружкам </div>
+					<h3>Осталось <span id="time">00:00</span></h3>
+					<div class="board" id="board"></div>
+					<a href="#" class="reloadPage">
+						Начать с начала!
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/portfolio_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="css/style__Game_ Aim_Training.css">
+	<title> Game: Aim Training </title>
+</head>
+
+<body>
+
+	<div class="screen">
+		<h1>Aim Training</h1>
+		<a href="#" class="start" id="start">Начать игру</a>
+	</div>
+
+	<div class="screen">
+		<h1>Выберите время</h1>
+		<ul class="time-list" id="time-list">
+			<li>
+				<button class="time-btn" data-time="10">
+					10 сек
+				</button>
+			</li>
+			<li>
+				<button class="time-btn" data-time="20">
+					20 сек
+				</button>
+			</li>
+			<li>
+				<button class="time-btn" data-time="30">
+					30 сек
+				</button>
+			</li>
+			<li>
+				<button class="time-btn" data-time="60">
+					60 сек
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="screen">
+		<div class="title"> Щёлкай мышью по кружкам </div>
+		<h3>Осталось <span id="time">00:00</span></h3>
+		<div class="board" id="board"></div>
+		<a href="#" class="reloadPage">
+			Начать с начала!
+		</a>
+	</div>
+
+	<script src="js/script__Game_ Aim_Training.js"></script>
+</body>
+
+</html>
