@@ -1,4 +1,4 @@
-# My_Site_AlexandrZ
+# Personal_Site_AlexandrZ
 
 Личный сайт Александра Забавина
 
