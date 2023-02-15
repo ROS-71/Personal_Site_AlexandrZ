@@ -1,0 +1,323 @@
+/*Разрешение менее < 992px */
+@media (max-width: 992px) {
+	.header .logo__block {
+		padding: 130px;
+	}
+
+	.header .header__logo {
+		width: auto;
+
+	}
+
+	.header .logo__text {
+		padding-left: 20px;
+	}
+
+	.header .logo__portfolioTitle {
+		font-size: 76px;
+		text-align: center;
+		padding-right: 0;
+	}
+}
+
+/* Разрешение менее < 970px */
+@media (max-width: 970px) {
+	.header {
+		background-size: 100% 90%;
+		background-position: top;
+	}
+
+	.header .logo__block {
+		padding-top: 20px;
+	}
+
+	.header .header__logo {
+		min-width: 200px;
+	}
+
+	.menu__item {
+		font-size: 30px;
+	}
+}
+
+/* Разрешение менее < 880px */
+@media (max-width: 880px) {
+
+	.header {
+		background-size: 100% 80%;
+	}
+
+
+}
+
+
+/* Разрешение менее < 767px */
+@media (max-width: 767px) {
+	.header {
+		background-size: 100% 120%;
+	}
+
+	.header .logo__portfolioTitle {
+		padding-top: 10px;
+		font-size: 68px;
+	}
+
+	.header .logo__block {
+		flex-direction: column;
+		padding: 20px 60px;
+	}
+
+	.header .logo__name {
+		padding: 20px;
+	}
+
+	.header .header__logo {
+		width: 200px;
+
+	}
+
+	.header .logo__text {
+		padding-left: 0;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	/* Бургер меню */
+	.header__burger {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		opacity: 1.5;
+	}
+
+	.menu__icon {
+		z-index: 10;
+		display: block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		margin: 10px 0 5px 10px;
+
+		background-color: rgba(108, 178, 46, 0.545);
+		border-radius: 50%;
+	}
+
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 15%;
+		position: absolute;
+		height: 8%;
+		width: 70%;
+
+		transition: all 0.3s ease 0s;
+		background-color: #ffffff;
+	}
+
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+
+	.menu__icon::before {
+		top: 10px;
+	}
+
+	.menu__icon::after {
+		bottom: 10px;
+	}
+
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+		-webkit-transform: scale(1) translate(0px, -50%);
+		-moz-transform: scale(1) translate(0px, -50%);
+		-ms-transform: scale(1) translate(0px, -50%);
+		-o-transform: scale(1) translate(0px, -50%);
+	}
+
+	/* Анимирование кнопки Меню Бургер при нажатии */
+	.menu__icon.active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+
+	.menu__icon.active::before {
+		top: 50%;
+		left: 17%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+
+	.menu__icon.active::after {
+		bottom: 50%;
+		left: 17%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+
+	/* *********************************************** */
+
+	.menu__body {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translate(-100%, 0px);
+		background-color: rgba(0, 0, 0, 0.95);
+		padding: 100px 30px 30px 30px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.menu__body.active {
+		transform: translate(0, 0);
+	}
+
+	.menu__link_burger {
+		padding: 0 0 120px 0;
+		color: #ffffff;
+		text-shadow: #000000 5px 5px 5px;
+	}
+
+
+}
+
+/* Разрешение менее < 705px */
+@media (max-width: 705px) {
+	.tabLinks {
+		flex-direction: column;
+	}
+
+	.tabLinks img {
+		margin: 0 0 5px 0;
+	}
+}
+
+/* Разрешение менее < 650px */
+@media (max-width: 650px) {
+	.header .logo__portfolioTitle {
+		font-size: 48px;
+	}
+
+	.header .logo__block {
+		padding: 40px;
+	}
+
+	.header .logo__name {
+		padding: 10px;
+	}
+
+	.header .header__logo {
+		min-width: 150px;
+		width: 150px;
+		height: 150px;
+	}
+
+	/* Для модального окна js2_second */
+	.row {
+		width: 500px;
+	}
+
+}
+
+/* Разрешение менее <580px (для блока footer */
+@media (max-width: 580px) {
+	.header .logo__portfolioTitle {
+		font-size: 38px;
+		text-shadow: 3px 3px 1px #000000;
+	}
+
+	.header .logo__block {
+		padding: 30px;
+	}
+
+	.tabs__items {
+		display: grid;
+		grid-template-columns: 50% 50%;
+
+	}
+
+	.tabs__items :nth-child(3n+4) {
+		margin-top: 20px;
+	}
+
+	/* Для модального окна js2_second */
+	.row {
+		width: 370px;
+	}
+
+	.col-header {
+		width: 118px;
+	}
+}
+
+
+/* Разрешение менее < 480px */
+@media (max-width: 480px) {
+	.header {
+		background-size: 140%;
+	}
+
+	.header .logo__portfolioTitle {
+		font-size: 24px;
+	}
+
+	.header .header__logo {
+		min-width: 100px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.header .logo__text {
+		padding-bottom: 20px;
+	}
+
+	.resume__mini {
+		font-size: 24px;
+	}
+
+	.header__name {
+		font-size: 40px;
+	}
+
+	.header__position {
+		font-size: 20px;
+	}
+}
+
+/* Разрешение менее < 380px */
+@media (max-width: 380px) {
+	.header {
+		background-size: 180%;
+		background-position: right;
+	}
+
+	.header .logo__portfolioTitle {
+		font-size: 18px;
+	}
+
+	.header .logo__name {
+		padding: 20px;
+	}
+
+	.header .logo__text {
+		padding-bottom: 40px;
+	}
+}
+
+/* Разрешение менее < 320px */
+@media (max-width: 320px) {
+	.header {
+		background-size: cover;
+		background-position: right;
+
+	}
+
+	.header .logo__text {
+		padding-bottom: 30px;
+	}
+}
