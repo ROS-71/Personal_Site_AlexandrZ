@@ -222,6 +222,17 @@ em {
 	padding-bottom: 7px;
 }
 
+.education__name {
+	padding: 0 0 5px 0;
+}
+
+.HTML_Academy_Certificate {
+	color: rgb(255, 0, 0);
+	font-style: italic;
+	font-weight: 600;
+	letter-spacing: 0.9px;
+}
+
 /* Кнопка "Скачать резюмеЭ */
 .btn__resume-download {
 	background-color: transparent;
